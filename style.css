@@ -14,7 +14,6 @@ body {
     padding: 30px;
     background-color: hsl(0, 0%, 94%);
     border-radius: 25px 25px 220px 25px;
-
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -27,7 +26,6 @@ body {
 .inputAndLabel {
     display: flex;
     flex-direction: column;
-
     margin-right: 20px;
 }
 
