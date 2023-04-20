@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <section id="dateInputs">
+            <div id="dayInputDiv" class="inputAndLabel">
+                <label id="dayInputLabel" class="labelNormalStyle" for="dayInput">DAY</label>
+                <input type="text" maxlength="2" placeholder="DD" id="dayInput" class="inputNormalStyle">
+            </div>
+
+            <div id="monthInputDiv" class="inputAndLabel">
+                <label id="monthInputLabel" class="labelNormalStyle" for="monthInput">MONTH</label>
+                <input type="text" maxlength="2" placeholder="MM" id="monthInput" class="inputNormalStyle">
+            </div>
+
+            <div id="yearInputDiv" class="inputAndLabel">
+                <label id="yearInputLabel" class="labelNormalStyle" for="yearInput">YEAR</label>
+                <input type="text" maxlength="4" placeholder="YYYY" id="yearInput" class="inputNormalStyle">
+            </div>
+        </section>
+
+        <section id="lineAndButton">
+            <hr id="leftLine">
+            <button class="buttonNormalStyle">
+                <img src="./images/icon-arrow.svg" alt="Arrow Icon">
+            </button>
+            <hr id="rightLine">
+        </section>
+
+        <section id="ageResult">
+            <div class="result">
+                <p id="yearResultNumber" class="resultNumber">--</p>
+                <p id="yearResultDescription" class="resultDescription">years</p>
+            </div>
+
+            <div class="result">
+                <p id="monthResultNumber" class="resultNumber">--</p>
+                <p id="monthResultDescription" class="resultDescription">months</p>
+            </div>
+
+            <div class="result">
+                <p id="dayResultNumber" class="resultNumber">--</p>
+                <p id="dayResultDescription" class="resultDescription">days</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

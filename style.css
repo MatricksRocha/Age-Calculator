@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+#calculator {
+    width: 648px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 94%);
+    border-radius: 25px 25px 220px 25px;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#dateInputs {
+    display: flex;
+}
+
+.inputAndLabel {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 20px;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.labelNormalStyle {
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    height: 50px;
+    width: 130px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.inputNormalStyle {
+    border: 1px solid hsl(0, 1%, 44%, 0.7);
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+/* the 3 elements below changes the color of the input placeholders */
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(0, 1%, 44%, 0.7);
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsl(0, 1%, 44%, 0.7);
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: hsl(0, 1%, 44%, 0.7);
+}
+
+#lineAndButton {
+    display: flex;
+}
+
+#leftLine {
+    border: 1px solid hsl(0, 1%, 44%, 0.1);
+    margin: auto 0;
+    width: 100%;
+}
+
+#rightLine {
+    border: 0
+} 
+
+img {
+    width: 90px;
+    height: 85px;
+    padding: 20px;
+}
+
+button {
+    width: min-content;
+    height: min-content;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.buttonNormalStyle {
+    background-color: hsl(259, 100%, 65%);
+    border-color: hsl(259, 100%, 65%);
+}
+
+.resultNumber, .resultDescription {
+    font-weight: bold;
+    margin: 0;
+    font-size: 75px;
+}
+
+.resultNumber {
+    color: hsl(259, 100%, 65%);;
+}
+
+.resultDescription {
+    color: black;
+    margin-left: 20px;
+}
+
+.result {
+    display: flex;
+}
+
+/* JS Styles - For the elements that may be included using javascript*/
+
+.warning {
+    font-style: italic;
+    font-weight: lighter;
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+}
+
+.labelWithWarning {
+    color: hsl(0, 100%, 67%);
+}
+
+.inputWithWarning {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.buttonBlackStyle {
+    background-color: black;
+    border-color: black;
+}
+
+@media (max-width: 900px)
+{
+    #calculator {
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        border-radius: 25px 25px 150px 25px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input {
+        height: 40px;
+        width: 70px;
+        font-size: 18px;
+    }
+
+    .resultNumber, .resultDescription {
+        font-weight: bold;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    img {
+        width: 55px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    #calculateButton {
+        margin: 30px 0;
+    }
+
+    #rightLine {
+        border: 1px solid hsl(0, 1%, 44%, 0.1);
+        margin: auto 0;
+        width: 100%;
+    } 
+
+    div p:last-of-type {
+        margin-left: 10px;
+    }
+}
