@@ -320,6 +320,7 @@ const button = document.querySelector('button');
 dayInput.addEventListener('keyup', function() {validDay(dayInput.value)});
 monthInput.addEventListener('keyup', function() {validMonth(monthInput.value)});
 yearInput.addEventListener('keyup', function() {validYear(yearInput.value)});
+dayInput.addEventListener('keydown', function() {buttonNormalStyle(button)});
 monthInput.addEventListener('keydown', function() {buttonNormalStyle(button)});
 yearInput.addEventListener('keydown', function() {buttonNormalStyle(button)});
 button.addEventListener('click', function() {validDay(dayInput.value)});
